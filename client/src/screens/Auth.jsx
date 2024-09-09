@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Signup from "../components/Signup";
 import Login from "../components/Login";
+import { Link } from "react-router-dom";
 
 function Auth() {
   const [isSignup, setIsSignup] = useState(true);
@@ -24,6 +25,9 @@ function Auth() {
         >
           Login
         </button>
+        <Link to="/dash" className="hover:bg-gray-700 p-2 rounded">
+          Dashboard
+        </Link>
       </div>
       <div className="w-full max-w-md">{isSignup ? <Signup /> : <Login />}</div>
     </div>
