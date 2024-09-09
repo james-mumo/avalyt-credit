@@ -2,7 +2,9 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:4444/api", // Backend API base URL
+  // baseURL: "http://localhost:4444/api",
+
+  baseURL: "https://avalyt-credit.onrender.com/api",
 });
 
 export default axiosInstance;
